@@ -1,0 +1,5 @@
+- [ ] Update Task class fields: Change extractedEntities to List<String> and make both suggestedActions and extractedEntities non-nullable
+- [ ] Update Task constructor to reflect non-nullable fields
+- [ ] Update fromJson method: Use safe parsing for suggestedActions and extractedEntities with List<String>.from(json['field'] ?? [])
+- [ ] Update toJson method: Serialize extractedEntities as list
+- [ ] Update copyWith method: Change extractedEntities parameter to List<String>
