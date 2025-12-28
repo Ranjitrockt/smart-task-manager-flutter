@@ -2,13 +2,23 @@ Smart Task Manager is a full-stack task management application that automaticall
 classifies and prioritizes tasks based on their content.  
 The system analyzes task descriptions to detect category, priority, extract key
 entities, and suggest relevant actions, providing a productivity-focused experience.
+Project Overview
 
-This project was built as part of the Backend + Flutter Hybrid Developer Assessment.
-🛠 2️⃣ Tech Stack
-Sirf bullet points me likhna hota hai.
+This project is a Smart Task Management System built to demonstrate full-stack development capabilities as required by the developer assessment. The application's architecture is centered around a powerful and intelligent backend, supported by a functional and clean Flutter mobile interface.
+Backend Architecture (Core Expertise)
+My primary focus and expertise lie in backend development, and this project heavily reflects that. The backend was built using Java and the Spring Boot framework, following modern software engineering principles.
+Intelligent Services: The core logic resides in the backend, which automatically classifies tasks by category (e.g., Scheduling, Finance) and priority (High, Medium, Low) through content analysis. It also generates contextual suggested actions.
+Robust API: A complete RESTful API was designed and implemented with clear, logical endpoints for all CRUD (Create, Read, Update, Delete) operations, including pagination and filtering.
+•
+Database Design: The system uses a PostgreSQL database with a normalized schema, including a task_history table to ensure a complete audit trail for every task.
+•
+Deployment & DevOps: The entire backend, along with its database, is professionally deployed on Render, demonstrating my ability to manage the full lifecycle of a service from development to live deployment.
 
-md
-Copy code
+/*Frontend Development Learning Challenge
+While my core strength is the backend, I enthusiastically took on the challenge of building the frontend with Flutter. This part of the assessment was a significant learning opportunity for me.
+I am not a Flutter expert, and building a polished, production-ready mobile UI was a difficult task. However, I was determined to complete the full-stack challenge. I successfully implemented the required features, including the task dashboard, state management with Riverpod, and API integration using Dio. This experience has proven my ability to quickly learn new technologies and adapt to the requirements of a hybrid role.
+I am confident that my strong foundation in backend architecture, combined with my proven ability to tackle and deliver on new challenges like the Flutter frontend, makes me a strong candidate for this internship. I am eager to continue learning and growing in a professional environment.
+
 ## Tech Stack
 
 ### Backend
@@ -27,11 +37,7 @@ Copy code
 ### Tools
 - Git & GitHub
 - Postman / Swagger UI
-🌐 3️⃣ Live Backend URL (Render)
-Yahan sirf URL + short line.
-
-md
-Copy code
+🌐 
 ## Live Backend URL
 
 https://smart-task-manager-backend-5.onrender.com
@@ -39,10 +45,7 @@ https://smart-task-manager-backend-5.onrender.com
 Swagger UI:
 https://smart-task-manager-backend-5.onrender.com/swagger-ui.html
 🔌 4️⃣ API Endpoints (request / response)
-Ye interviewer sabse zyada dekhta hai.
 
-md
-Copy code
 ## API Endpoints
 
 ### Create Task
@@ -59,13 +62,12 @@ Request:
 Response:
 
 json
-Copy code
+
 {
   "id": "uuid",
   "category": "scheduling",
   "priority": "high",
   "status": "pending",
-  "extractedEntities": ["client", "invoice"],
   "suggestedActions": ["Block calendar", "Send invite"]
 }
 Get Tasks (Pagination)
@@ -81,14 +83,11 @@ Get Task with History
 GET /api/tasks/{id}
 
 pgsql
-Copy code
-
----
 
 ## 🗄 5️⃣ Database Schema
 Yahan **table structure likhna hota hai**, SQL optional.
 
-```md
+
 ## Database Schema
 
 ### tasks
